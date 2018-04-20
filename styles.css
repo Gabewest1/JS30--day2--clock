@@ -1,0 +1,59 @@
+body {
+    align-items: center;
+    background: linear-gradient(black, brown);
+    display: flex;
+    justify-content: center;
+}
+.clock {
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+}
+.clock__face {
+    align-items: center;
+    background-color: brown;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+}
+.clock__hand {
+    transition: all .1s ease-in-out 0s;
+    background-color: black;
+    position: absolute;
+    transform: translateY(-50%) rotate(0deg);
+    transform-origin: 100% 100%;
+    width: 7px;
+}
+.clock__hand.hour {
+    height: 25%;
+}
+.clock__hand.minute {
+    height: 48%;
+}
+.clock__hand.second {
+    background-color: purple;
+    width: 2px;
+    height:50%;
+}
+.clock__face__side {
+    display: flex;
+    justify-content: space-between;
+}
+.top {
+    top: 0;
+}
+.bottom {
+    bottom: 0;
+}
+.right {
+    flex-direction: column;
+    right: 0;
+}
+.left {
+    flex-direction: column;
+    left: 0;
+}
